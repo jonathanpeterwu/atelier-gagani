@@ -261,16 +261,17 @@
     /* ────────────────────────────
        ABOUT
     ──────────────────────────── */
-    #page-about { overflow-y: auto; }
+    #page-about { overflow-y: auto; justify-content: center; }
 
     .about-inner {
       max-width: 800px;
+      width: 100%;
       margin: 0 auto;
-      padding: 7rem 3rem 5rem;
+      padding: 5rem 3rem;
       display: grid;
       grid-template-columns: 1fr 1.2fr;
       gap: 5rem;
-      align-items: start;
+      align-items: center;
     }
 
     .about-image-col img {
@@ -279,7 +280,7 @@
       display: block;
     }
 
-    .about-text-col { padding-top: 0.5rem; }
+    .about-text-col { padding-top: 0; }
 
     .about-heading {
       font-family: 'IM Fell English', serif;
@@ -291,7 +292,7 @@
     }
 
     .about-body {
-      font-size: 1rem;
+      font-size: 1.15rem;
       line-height: 2;
       color: var(--ink);
       opacity: 0.68;
@@ -532,10 +533,10 @@
       .about-inner,
       .contact-inner {
         grid-template-columns: 1fr;
-        gap: 3rem;
-        padding: 6rem 1.6rem 4rem;
+        gap: 2rem;
+        padding: 5rem 1.6rem 3rem;
       }
-      .about-image-col { display: none; }
+      .about-image-col img { max-width: 280px; margin: 0 auto; }
       .menu-btn { top: 1.5rem; right: 1.8rem; }
     }
   </style>
@@ -587,7 +588,7 @@
     </div>
     <div class="about-inner">
       <div class="about-image-col">
-        <img src="IMG_0026.PNG" alt="Atelier Gagani artwork">
+        <img src="IMG_about.PNG" alt="Atelier Gagani artwork">
       </div>
       <div class="about-text-col">
         <p class="about-body">Atelier Gagani was founded by Leili Ghaemi, an engineer and architect trained at the Architectural Association in London.</p>
