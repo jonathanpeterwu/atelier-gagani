@@ -384,9 +384,23 @@
     .contact-centered {
       flex: 1;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 2rem;
     }
+
+    .email-link {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.98rem;
+      font-style: italic;
+      color: var(--ink);
+      opacity: 0.55;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+
+    .email-link:hover { opacity: 1; }
 
     .ig-link {
       display: inline-flex;
@@ -589,6 +603,7 @@
       <button class="page-wordmark" data-page="home">Atelier Gagani</button>
     </div>
     <div class="contact-centered">
+      <a href="mailto:studio@ateliergagani.com" class="email-link">studio@ateliergagani.com</a>
       <a href="https://www.instagram.com/ateliergagani" target="_blank" rel="noopener noreferrer" class="ig-link" aria-label="Atelier Gagani on Instagram">
         <svg class="ig-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
           <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
